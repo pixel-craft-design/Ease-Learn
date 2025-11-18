@@ -1,0 +1,7 @@
+{
+  "name": "Ease Learn",
+  "description": "An AI-powered study companion website designed to enhance students’ learning and productivity through intelligent automation and personalized academic support. It serves as a virtual learning assistant that simplifies complex study processes and helps users retain information efficiently.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
