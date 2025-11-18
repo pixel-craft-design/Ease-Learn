@@ -6,7 +6,7 @@ import Summarizer from './components/Summarizer';
 import QuizGenerator from './components/QuizGenerator';
 import EssayOutliner from './components/EssayOutliner';
 import AITutor from './components/AITutor';
-import { EaseLearnLogoIcon } from './components/icons/EaseLearnLogoIcon';
+import { StudyVerseLogoIcon } from './components/icons/EaseLearnLogoIcon';
 import { useAuth } from './contexts/AuthContext';
 import Login from './components/Login';
 
@@ -115,8 +115,8 @@ const App: React.FC = () => {
                     className="flex items-center gap-2 text-green-700 p-1 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors hover:bg-gray-100"
                     aria-label="Go to dashboard"
                 >
-                    <EaseLearnLogoIcon className="w-7 h-7"/>
-                    <span className="font-semibold text-lg hidden md:block">Ease Learn</span>
+                    <StudyVerseLogoIcon className="w-7 h-7"/>
+                    <span className="font-semibold text-lg hidden md:block">Study Verse</span>
                 </button>
                 <div className="relative" ref={menuRef}>
                     <button onClick={() => setUserMenuOpen(!userMenuOpen)} className="flex items-center space-x-2 p-1 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">

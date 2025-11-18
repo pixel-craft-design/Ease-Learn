@@ -5,7 +5,7 @@ import {
   signInWithPopup,
 } from 'firebase/auth';
 import { auth, googleProvider } from '../firebaseConfig';
-import { EaseLearnLogoIcon } from './icons/EaseLearnLogoIcon';
+import { StudyVerseLogoIcon } from './icons/EaseLearnLogoIcon';
 
 const Login: React.FC = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -40,12 +40,12 @@ const Login: React.FC = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-50">
       <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-xl shadow-lg animate-fade-in">
         <div className="flex flex-col items-center space-y-2">
-          <EaseLearnLogoIcon className="w-12 h-12 text-green-600" />
+          <StudyVerseLogoIcon className="w-12 h-12 text-green-600" />
           <h1 className="text-3xl font-bold text-gray-800">
             {isLogin ? 'Welcome Back' : 'Create Account'}
           </h1>
           <p className="text-gray-500">
-            {isLogin ? 'Sign in to continue to Ease Learn' : 'Get started with your personal AI tutor'}
+            {isLogin ? 'Sign in to continue to Study Verse' : 'Get started with your personal AI tutor'}
           </p>
         </div>
         <form onSubmit={handleAuthAction} className="space-y-4">

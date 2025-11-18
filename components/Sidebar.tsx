@@ -6,7 +6,7 @@ import { PencilSquareIcon } from './icons/PencilSquareIcon';
 import { BookOpenIcon } from './icons/BookOpenIcon';
 import { ChatBubbleLeftRightIcon } from './icons/ChatBubbleLeftRightIcon';
 import { XMarkIcon } from './icons/XMarkIcon';
-import { EaseLearnLogoIcon } from './icons/EaseLearnLogoIcon';
+import { StudyVerseLogoIcon } from './icons/EaseLearnLogoIcon';
 
 interface SidebarProps {
   currentView: ViewType;
@@ -60,8 +60,8 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, setCurrentView, isSideba
         <aside className={`absolute lg:relative z-40 w-64 h-full bg-green-700 text-white flex flex-col transition-transform transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
         <div className="flex items-center justify-between p-4 border-b border-green-800">
           <div className="flex items-center gap-3">
-            <EaseLearnLogoIcon className="w-8 h-8" />
-            <h1 className="text-2xl font-bold">Ease Learn</h1>
+            <StudyVerseLogoIcon className="w-8 h-8" />
+            <h1 className="text-2xl font-bold">Study Verse</h1>
           </div>
            <button onClick={() => setIsSidebarOpen(false)} className="lg:hidden p-1 text-white hover:bg-green-800 rounded-full">
                <XMarkIcon className="w-6 h-6" />
@@ -82,7 +82,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, setCurrentView, isSideba
         </nav>
         <div className="p-4 border-t border-green-800">
             <p className="text-xs text-green-200">
-                © {new Date().getFullYear()} Ease Learn Inc.
+                © {new Date().getFullYear()} Study Verse Inc.
                 <br/>
                 Your personal AI learning assistant.
             </p>
