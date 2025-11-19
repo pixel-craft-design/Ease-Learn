@@ -32,7 +32,7 @@ const NavItem: React.FC<{
       className={`flex items-center p-3 rounded-lg transition-colors duration-200 ${
         isActive
           ? 'bg-green-600 text-white shadow-md'
-          : 'text-gray-100 hover:bg-green-800 hover:text-white'
+          : 'text-gray-600 hover:bg-green-50 hover:text-green-700'
       }`}
     >
       {icon}
@@ -59,13 +59,13 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, setCurrentView, isSideba
   return (
     <>
         <div className={`fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden transition-opacity ${isSidebarOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={() => setIsSidebarOpen(false)}></div>
-        <aside className={`absolute lg:relative z-40 w-64 h-full bg-green-700 text-white flex flex-col transition-transform transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
-        <div className="flex items-center justify-between p-4 border-b border-green-800">
-          <div className="flex items-center gap-3">
+        <aside className={`absolute lg:relative z-40 w-64 h-full bg-white text-gray-700 flex flex-col transition-transform transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 border-r border-gray-200 shadow-xl lg:shadow-none`}>
+        <div className="flex items-center justify-between p-4 border-b border-gray-100">
+          <div className="flex items-center gap-3 text-green-700">
             <StudyVerseLogoIcon className="w-8 h-8" />
             <h1 className="text-2xl font-bold">Study Verse</h1>
           </div>
-           <button onClick={() => setIsSidebarOpen(false)} className="lg:hidden p-1 text-white hover:bg-green-800 rounded-full">
+           <button onClick={() => setIsSidebarOpen(false)} className="lg:hidden p-1 text-gray-500 hover:bg-gray-100 rounded-full">
                <XMarkIcon className="w-6 h-6" />
            </button>
         </div>
@@ -82,8 +82,8 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, setCurrentView, isSideba
             ))}
           </ul>
         </nav>
-        <div className="p-4 border-t border-green-800">
-            <p className="text-xs text-green-200">
+        <div className="p-4 border-t border-gray-100">
+            <p className="text-xs text-gray-400">
                 © {new Date().getFullYear()} Study Verse Inc.
                 <br/>
                 Your personal AI learning assistant.
